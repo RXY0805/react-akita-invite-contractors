@@ -1,6 +1,6 @@
 import { ID, guid } from '@datorama/akita';
 
-export type Contractor {
+export type Contractor = {
   id?: ID;
   companyId?: number;
   companyName?: string;
@@ -12,7 +12,7 @@ export type Contractor {
   projectId: number;
   //contactPerson: ContactPerson[];
   [key: number]: any;
-}
+};
 
 export function createContractor(params: Partial<Contractor>) {
   return {
